@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aggregatable", "src\Aggregatable\Aggregatable.csproj", "{3071ABB1-54EF-49A7-A219-3F265BBCB92D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aggregatable.Sample", "src\Aggregatable.Sample\Aggregatable.Sample.csproj", "{FBC12042-DB80-4DD4-868B-6093BAE56D81}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aggregatable.PostgreSql", "src\Aggregatable.PostgreSql\Aggregatable.PostgreSql.csproj", "{5521E8EA-F0DD-42D2-B095-25DFBA17BBBD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Integratoins", "Integratoins", "{FC33F8DA-205B-48C5-B120-A1A8C9FD4B25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aggregatable.Dapper", "src\Aggregatable.Dapper\Aggregatable.Dapper.csproj", "{F7703F5D-E93F-487C-836E-6B613D03604D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Aggregatable.DependencyInjection", "src\Aggregatable.DependencyInjection\Aggregatable.DependencyInjection.csproj", "{B47E2146-DD07-45AA-B82E-EF15C0F3D4A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3071ABB1-54EF-49A7-A219-3F265BBCB92D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3071ABB1-54EF-49A7-A219-3F265BBCB92D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3071ABB1-54EF-49A7-A219-3F265BBCB92D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3071ABB1-54EF-49A7-A219-3F265BBCB92D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBC12042-DB80-4DD4-868B-6093BAE56D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBC12042-DB80-4DD4-868B-6093BAE56D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBC12042-DB80-4DD4-868B-6093BAE56D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBC12042-DB80-4DD4-868B-6093BAE56D81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5521E8EA-F0DD-42D2-B095-25DFBA17BBBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5521E8EA-F0DD-42D2-B095-25DFBA17BBBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5521E8EA-F0DD-42D2-B095-25DFBA17BBBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5521E8EA-F0DD-42D2-B095-25DFBA17BBBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7703F5D-E93F-487C-836E-6B613D03604D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7703F5D-E93F-487C-836E-6B613D03604D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7703F5D-E93F-487C-836E-6B613D03604D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7703F5D-E93F-487C-836E-6B613D03604D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B47E2146-DD07-45AA-B82E-EF15C0F3D4A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B47E2146-DD07-45AA-B82E-EF15C0F3D4A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B47E2146-DD07-45AA-B82E-EF15C0F3D4A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B47E2146-DD07-45AA-B82E-EF15C0F3D4A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F7703F5D-E93F-487C-836E-6B613D03604D} = {FC33F8DA-205B-48C5-B120-A1A8C9FD4B25}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AD29B3F-10A3-43FD-921E-C9FE19A13ADD}
+	EndGlobalSection
+EndGlobal
