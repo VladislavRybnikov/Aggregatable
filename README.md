@@ -2,7 +2,7 @@
 
 Main idea of the project is to simplify implementation of entity updates in event based systems. There are situations when multiple microservices work with one entity (or aggregate) 
 and update parts of this entity in different storages, so there should be written non-trivial logic to synchronize data state between this storages.
-> :exclamation: Unlike other similar projets this does not use same model for aggregation and enetity represantations. Also, data updates performs automaticaly on events in choosen storage `From aggregate events to table` (no need in separaate repositories...)
+> :exclamation: Unlike other similar projets this does not use same model for aggregation and enetity represantations. Also, data updates performs automaticaly on events in choosen storage `From aggregate events to table` (no need in separate repositories...)
 
 ## :zap: Example
 Firstly, you should create a class, which will implement `AggregateRoot<T>`, where T is your existing entity
