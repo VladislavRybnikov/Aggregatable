@@ -5,7 +5,7 @@ and update parts of this entity in different storages, so there should be writte
 > :exclamation: Unlike other similar projets this does not use same model for aggregation and enetity represantations. Also, data updates performs automaticaly on events in choosen storage `From aggregate events to table` (no need in separaate repositories...)
 
 ## :zap: Example
-Firstly, you should create a class wich will implement `AggregateRoot<T>`, where T is your existing entity
+Firstly, you should create a class, which will implement `AggregateRoot<T>`, where T is your existing entity
 
 ```csharp
 public class UserAggregateRoot : AggregateRoot<User>
@@ -32,7 +32,7 @@ public class UserAggregateRoot : AggregateRoot<User>,  IAmUpdateFrom<NameUpdate>
             .Set(e => e.Name, message.Name));
 }
 ```
-Where `Update` is a protected member of `AggregateRoot` which is providing `Fluent` interface for event :arrow_right: entity mappings
+Where `Update` is a protected member of `AggregateRoot`, which is providing `Fluent` interface for event :arrow_right: entity mappings
 #### :two: Use protected methods of AggregateRoot inside your `ctor`
 ```csharp
 public class UserAggregateRoot : AggregateRoot<User>, 
@@ -47,7 +47,7 @@ public class UserAggregateRoot : AggregateRoot<User>,
     }
 }
 ```
-Then you could use your aggregation like following:
+Then, you could use your aggregation like following:
 ```csharp
 var store = new InMemoryStorage();
 store.Add("123", new User { Name = "ABC", Email = "abc@mail.com", Id = "123" });
@@ -58,14 +58,15 @@ await aggregationContext.SendAsync<User, NameUpdate>(new NameUpdate { Name = "AB
 
 ## :trophy: What was done
 - :white_check_mark: Handling events and updating aggregates in memory
-- :white_check_mark: Resolving AggregationRoots from assembly and regitring mappings
+- :white_check_mark: Resolving AggregationRoots from assembly 
+- :white_check_mark: Mappings registring from interface and ctor (WIP)
 - :white_check_mark: Base logic for PostgreSQL mappings, including jsonb (WIP)
 
 ## :heavy_plus_sign: TO DO
 - [ ] Add Dependency injection
-- [ ] Add more integrations with storages and ORMs (sql/nosql, EF, etc)
-- [ ] Add abstractions for automatic events processing
-- [ ] Add popular mq integratios (Kafka, Rabbit)
+- [ ] Add more integrations with storages and ORMs (sql/nosql, EF, etc...)
+- [ ] Add abstractions for automatic event processing
+- [ ] Add popular mq integrations (Kafka, Rabbit)
 
 ___
 :sos: I will be very grateful for any help with this project (issues, pull-requests, etc...)
