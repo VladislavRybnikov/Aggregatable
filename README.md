@@ -16,7 +16,7 @@ public class UserAggregateRoot : AggregateRoot<User>
 
 Then there are 2 options how to define event properties to entity properties mappings:
 
-#### :one: Use interface implementation of `IAmUpdateFrom<TMessage>
+#### :one: Use interface implementation of `IAmUpdateFrom<TMessage>`
 ```csharp
 public class UserAggregateRoot : AggregateRoot<User>,  IAmUpdateFrom<NameUpdate>, IAmUpdateFrom<EmailUpdate>
 {
@@ -33,7 +33,7 @@ public class UserAggregateRoot : AggregateRoot<User>,  IAmUpdateFrom<NameUpdate>
 }
 ```
 Where `Update` is a protected member of `AggregateRoot` which is providing `Fluent` interface for event :arrow_right: entity mappings
-#### :two: Use protected methods of AggregateRoot inside your ctor
+#### :two: Use protected methods of AggregateRoot inside your `ctor`
 ```csharp
 public class UserAggregateRoot : AggregateRoot<User>, 
 {
